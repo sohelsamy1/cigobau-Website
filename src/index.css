@@ -1,0 +1,47 @@
+/* src/index.css */
+
+:root {
+  --top-margin: -10px;
+  --bottom-margin: 30px;
+  --max-width: 1300px;
+}
+
+/* কন্টেন্ট বক্স - যা হেডার, ফুটার এবং সব পেজে কাজ করবে */
+.custom-box-width {
+  width: 100% !important;
+  max-width: var(--max-width) !important;
+  margin: var(--top-margin) auto var(--bottom-margin) auto !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* রেসপন্সিভ - মোবাইলের জন্য */
+@media (max-width: 991px) {
+  .custom-box-width { 
+    padding-left: 30px !important; 
+    padding-right: 30px !important; 
+  }
+}
+
+/* বডি ও বেসিক রিসেট */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* হেডার ফিক্স করার জন্য */
+header .custom-box-width {
+  margin: 0 auto !important; /* হেডারে মার্জিন সাধারণত ০ হয় */
+}
+
+/* ফুটার ফিক্স */
+footer {
+  width: 100% !important;
+  display: block;
+}

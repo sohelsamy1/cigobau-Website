@@ -1,0 +1,88 @@
+/* Header.css */
+.header-padding { padding-left: 6%; padding-right: 6%; }
+.bg-brand-blue { background-color: #468DFF !important; }
+.text-brand-blue { color: #468DFF !important; }
+.cursor-pointer { cursor: pointer; }
+.font-small { font-size: 0.85rem; }
+.icon-size-lg { font-size: 1.5rem; }
+.icon-size-md { font-size: 1.4rem; }
+
+/* লোগো বক্স ফিক্স - বাম দিকের বাড়তি জায়গা সরানো হয়েছে */
+.logo-box-1 { width: 100px; margin-left: 0px; }
+.logo-box-2 { width: 90px; margin-left: 40px; }
+
+/* হেডারের কাস্টম উইডথ ফিক্স - বাম দিকের গ্যাপ দূর করার জন্য */
+header .custom-box-width {
+    margin-left: auto ;
+    margin-right: auto;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+
+
+/* হেডার নেভিগেশন বারের বাম দিকের প্যাডিং সেট করা */
+/* এটি শুধুমাত্র হেডারের nav এর ভেতরের বক্সকে প্রভাবিত করবে */
+header nav.navbar .custom-box-width {
+    padding-left: 45px !important;
+    padding-right: 45px !important; /* ভারসাম্য রক্ষার জন্য ডান পাশেও প্যাডিং দিন */
+}
+
+/* বড় স্ক্রিনে সামান্য প্যাডিং যাতে একদম লেগে না যায় */
+@media (min-width: 992px) {
+    header .custom-box-width {
+        padding-left: 15px; 
+        padding-right: -15px;
+    }
+}
+
+.btn-kontakt {
+  background-color: #468DFF;
+  color: white;
+  padding: 8px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: lowercase;
+  transition: 0.3s;
+}
+.btn-kontakt:hover { background-color: #357ae8; color: white; }
+
+.dropdown-menu-custom {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+  width: 250px;
+  z-index: 1050;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 2000;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background: white;
+  z-index: 2001;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-sidebar.open {
+  transform: translateX(0);
+}
