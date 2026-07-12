@@ -1,0 +1,33 @@
+.services-section {
+  position: relative;
+  width: 100%;
+  height: 400px; /* আপনার প্রয়োজন অনুযায়ী উচ্চতা ঠিক করুন */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ভিডিওটি যেন পুরোপুরি ফিট হয় */
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end; /* ডান দিকে টেক্সট রাখার জন্য */
+  align-items: center;
+  height: 100%;
+  padding-right: 50px; /* ডানে জায়গা রাখার জন্য */
+}
+
+.text-box {
+  background-color: #3b82f6; /* নীল রঙ */
+  padding: 15px 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
