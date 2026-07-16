@@ -1,0 +1,74 @@
+/* কাস্টম কালার ভেরিয়েবল */
+:root {
+  --primary-color: #3b82f6;
+  --layer-bg-color: rgba(2, 91, 235, 0.1); /* এখানে কালার পরিবর্তন করতে পারবেন */
+}
+
+.card-box {
+  padding: 40px 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  height: 95%;
+  position: relative;
+  overflow: hidden; /* কার্ডের বাইরের অংশ লুকিয়ে রাখার জন্য */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* বর্ডার সেটআপ */
+  border-top: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+}
+
+/* বাম দিক থেকে আসা লেয়ারের কোড */
+.card-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* শুরুতে এটি বাম দিকে লুকিয়ে থাকবে */
+  width: 100%;
+  height: 100%;
+  background: var(--layer-bg-color);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+/* হোভার ইফেক্টস */
+.card-box:hover::before {
+  left: 0; /* মাউস নিলে লেয়ারটি বাম থেকে সামনে চলে আসবে */
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* টেক্সট এবং এলিমেন্টগুলো লেয়ারের উপরে রাখার জন্য */
+.card-box h5, 
+.card-box p, 
+.card-box .icon-wrapper, 
+.card-box a {
+  position: relative;
+  z-index: 1;
+}
+
+/* আইকন র‍্যাপার ডিজাইন (ঐচ্ছিক, আগের আলোচনার ভিত্তিতে) */
+.icon-wrapper {
+  color: var(--primary-color);
+  background: #eef5ff;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.card-box:hover .icon-wrapper {
+  background: var(--primary-color);
+  color: #ffffff;
+}

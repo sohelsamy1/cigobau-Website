@@ -1,0 +1,95 @@
+/* মূল সেকশন - এখানে padding-bottom মার্জিন হিসেবে কাজ করবে */
+.services-section {
+  padding-top: 80px;
+  padding-bottom: 100px; /* এই মানটিই ফুটারের সাথে দূরত্ব তৈরি করবে */
+  background-color: #f5f6f8;
+  width: 100%;
+  
+  /* সবচেয়ে গুরুত্বপূর্ণ পরিবর্তন */
+  display: flow-root; 
+  position: relative;
+  z-index: 1;
+}
+
+/* কন্টেইনার */
+.services-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* মেইন গ্রিড লেআউট - ৩টি কলাম */
+.services-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr 350px; 
+  gap: 30px;
+  align-items: start;
+}
+
+/* বাটন কলাম */
+.button-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  /* বাটনগুলোকে নিচে নামানোর জন্য এটি যোগ করুন */
+  margin-top: 10px; /* আপনার প্রয়োজন অনুযায়ী এই মান বাড়ান বা কমান */
+  
+  position: sticky;
+  top: 100px;
+}
+
+.button-col .tab-button {
+  margin-bottom: 5px; /* আপনার পছন্দমতো এখানে গ্যাপ বাড়ান বা কমান */
+}
+
+/* শেষ বাটনটির নিচে যেন বাড়তি মার্জিন না থাকে */
+.button-col .tab-button:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.tab-button {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-button.active {
+  background-color: #0d6efd;
+}
+
+/* কন্টেন্ট লিস্ট */
+.item-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* ইমেজ কলাম */
+.image-col img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block; /* নিচের বাড়তি ফাঁকা জায়গা দূর করে */
+}
+
+/* রেসপন্সিভ ডিজাইন */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

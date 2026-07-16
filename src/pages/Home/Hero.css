@@ -1,8 +1,9 @@
 /* src/components/Hero.css */
+
 .hero-container {
   position: relative;
   width: 100%;
-  height: 60vh; /* উচ্চতা প্রয়োজন অনুযায়ী কমানো বা বাড়ানো যাবে */
+  height: 60vh; /* উচ্চতা প্রয়োজন অনুযায়ী কমাতে বা বাড়াতে পারেন */
   overflow: hidden;
 }
 
@@ -10,29 +11,55 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* ভিডিওটি ব্যাকগ্রাউন্ডে রাখার জন্য */
 }
 
+/* পুরো স্ক্রিন জুড়ে ফ্লেক্সবক্স দিয়ে মাঝখানে আনার জন্য */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* কিছুটা অন্ধকার করার জন্য */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
+  justify-content: center; /* হরাইজন্টালি মাঝখানে */
+  align-items: center;     /* ভার্টিকালি মাঝখানে */
+  padding: 0 20px;
+}
+
+/* টেক্সট বক্সের স্টাইল */
+.hero-content {
+  background-color: #468DFF; /* স্কাই ব্লু রঙ ও স্বচ্ছতা */
+  padding: 15px 60px;
+  border-radius: 8px;
+  text-align: center; 
+  max-width: 60%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+  text-transform: uppercase;
 }
 
 .hero-btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #8cc63f;
+  margin-top: 25px;
+  padding: 12px 35px;
+  background-color: #919191;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #81ad4b;
 }
