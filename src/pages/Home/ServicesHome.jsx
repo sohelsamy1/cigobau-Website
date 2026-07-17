@@ -1,39 +1,39 @@
 import React, { useState } from 'react';
 import './Services.css';
 
-const Services = () => {
+const ServicesHome = () => {
   const servicesData = {
     building: {
-      header: "Benefit from a strong partner in the construction industry.",
-      subText: "We have many years of extensive experience in the planning and processing of various materials in Cigo construction.",
-      title: "BUILDING CONSTRUCTION",
+      header: "Profitieren Sie von einem starken Partner in der Baubranche.",
+      subText: "Wir verfügen über langjährige und umfassende Erfahrung in der Planung und Verarbeitung verschiedenster Materialien im Cigo-Bau.",
+      title: "HOCHBAU",
       image: "/expert1.png",
       items: [
-        { title: "Our quality standards", desc: "Adherence to deadlines, cost certainty and quality are top priorities.", icon: "👷" },
-        { title: "Our portfolio", desc: "Realization of public buildings, industrial buildings, and renovations!", icon: "🏗️" },
-        { title: "Our manpower", desc: "We currently have a core staff of 80-100 employees.", icon: "👥" }
+        { title: "Unsere Qualitätsstandards", desc: "Termintreue, Kostensicherheit und Qualität haben höchste Priorität.", icon: "👷" },
+        { title: "Unser Portfolio", desc: "Realisierung von öffentlichen Gebäuden, Industriebauten und Renovierungen!", icon: "🏗️" },
+        { title: "Unsere Manpower", desc: "Wir verfügen derzeit über einen Kernstab von 80-100 Mitarbeitern.", icon: "👥" }
       ]
     },
     structural: {
-      header: "Precision and Reliability in Structural Engineering.",
-      subText: "We handle complex structural tasks with modern technology and certified expertise.",
-      title: "STRUCTURAL WORK",
+      header: "Präzision und Zuverlässigkeit im Ingenieurbau.",
+      subText: "Wir bewältigen komplexe bauliche Aufgaben mit moderner Technologie und zertifizierter Fachkompetenz.",
+      title: "ROHBAU",
       image: "/Home/HomeImg3.webp",
       items: [
-        { title: "Structural Planning", desc: "Precise planning for complex structural components.", icon: "📐" },
-        { title: "Safety First", desc: "Highest safety standards for every project phase.", icon: "🛡️" },
-        { title: "Modern Techniques", desc: "Utilizing latest engineering tools for efficiency.", icon: "⚙️" }
+        { title: "Strukturplanung", desc: "Präzise Planung für komplexe Bauteile.", icon: "📐" },
+        { title: "Sicherheit zuerst", desc: "Höchste Sicherheitsstandards für jede Projektphase.", icon: "🛡️" },
+        { title: "Moderne Techniken", desc: "Einsatz neuester Ingenieurwerkzeuge für maximale Effizienz.", icon: "⚙️" }
       ]
     },
     masonry: {
-      header: "Masterful Masonry for Enduring Results.",
-      subText: "From residential brickwork to large scale concrete projects, we build to last.",
-      title: "MASONRY WORK",
+      header: "Meisterhafte Maurerarbeiten für dauerhafte Ergebnisse.",
+      subText: "Vom Mauerwerk im Wohnungsbau bis hin zu großflächigen Betonprojekten bauen wir für die Ewigkeit.",
+      title: "MAURERARBEITEN",
       image: "/Home/HomeImg1.webp",
       items: [
-        { title: "Expert Masonry", desc: "Professional brickwork for residential & commercial.", icon: "🧱" },
-        { title: "Concrete Structures", desc: "Reinforced concrete expertise for durability.", icon: "🏢" },
-        { title: "Material Quality", desc: "High-grade materials for long-lasting results.", icon: "💎" }
+        { title: "Experten-Maurerarbeiten", desc: "Professionelles Mauerwerk für Wohn- und Gewerbebauten.", icon: "🧱" },
+        { title: "Betonstrukturen", desc: "Kompetenz im Stahlbetonbau für höchste Langlebigkeit.", icon: "🏢" },
+        { title: "Materialqualität", desc: "Hochwertige Materialien für langanhaltende Ergebnisse.", icon: "💎" }
       ]
     }
   };
@@ -92,4 +92,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesHome;

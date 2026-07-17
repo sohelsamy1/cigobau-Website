@@ -2,9 +2,9 @@
 import React from 'react';
 import Hero from "./Hero";
 import Expertise from './Expertise';
-import Services from './Services';
-import Partners from './Partners'; // ইমপোর্ট করা হলো
-
+import ServicesHome from './ServicesHome';
+//import Testimonial from './Testimonial'; // Testimonial ইমপোর্ট করা হলো
+import Slider from './Slider';
 const Home = () => {
   return (
     <div>
@@ -20,10 +20,10 @@ const Home = () => {
       <Expertise />
       
       {/* ৩. সার্ভিস সেকশন */}
-      <Services />
+      <ServicesHome />
 
-      {/* ৪. পার্টনারস সেকশন  <Partners /> */}
-     
+      {/* ৪. টেস্টমোনিয়াল সেকশন <Testimonial />*/}
+       <Slider />
       
     </div>
   );

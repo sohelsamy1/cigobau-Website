@@ -61,5 +61,6 @@
 }
 
 .hero-btn:hover {
-  background-color: #81ad4b;
+  background-color: #468DFF;
+  border: 1px solid #f5f5f5;
 }

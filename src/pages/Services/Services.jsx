@@ -1,5 +1,7 @@
 import React from 'react';
 import './Services.css'; 
+import ServicesHome from '../Home/ServicesHome'; 
+
 // ১. এখানে আপনার ProfessionalSections কম্পোনেন্টটি ইমপোর্ট করুন
 import ProfessionalSections from '../Home/Partners'; // আপনার সঠিক ফোল্ডার পাথ দিন
 
@@ -9,7 +11,7 @@ const Services = () => {
       <section className="services-section">
         {/* ব্যাকগ্রাউন্ড ভিডিও */}
         <video className="background-video" autoPlay loop muted playsInline>
-          <source src="/path-to-your-video.mp4" type="video/mp4" />
+          <source src="/Services/ServiceBannerVideo.mp4" type="video/mp4" />
           আপনার ব্রাউজার ভিডিওটি সাপোর্ট করছে না।
         </video>
 
@@ -21,8 +23,9 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ২. ভিডিও সেকশনের নিচে আপনার কার্ডগুলো এখানে বসিয়ে দিন */}
+      {/* ২. ভিডিও সেকশনের নিচে আপনার কার্ডগুলো এখানে বসিয়ে দিন   DUPLICATE  */}
       <ProfessionalSections />
+      <ServicesHome />
     </>
   );
 };

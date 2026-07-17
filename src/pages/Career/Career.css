@@ -1,64 +1,66 @@
-.banner-section {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
-.banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* ব্যানার স্টাইল */
+.career-banner {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/Career/CareerBanner.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
-.banner-text {
-  background-color: #003399;
-  color: white;
-  padding: 10px 20px;
-  font-weight: bold;
+.banner-content h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
-.info-section {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 50px 20px;
+/* নিচের সেকশন - এটিই ধূসর হয়ে আছে, তাই সাদা করে দিলাম */
+.info-section-clean {
+  padding: 80px 0;
   text-align: center;
+  background-color: #ffffff !important; /* জোর করে সাদা করা হয়েছে */
 }
 
 .divider {
-  width: 400px;
-  height: 2px;
-  background-color: #3b82f6;
+  width: 80px;
+  height: 4px;
+  background-color: #468DFF;
   margin: 20px auto;
 }
 
-/* ৩টি ভিডিও গ্রিড স্টাইল */
+.apply-btn {
+  display: inline-block;
+  background-color: #468DFF;
+  color: #ffffff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.apply-btn:hover {
+  background-color: #357abd;
+  color: #ffffff;
+}
+
+/* ভিডিও সেকশনের জন্য সিএসএস */
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 40px;
-  background-color: #1a1a1a;
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #468DFF;
+  margin-bottom: 30px;
+   margin-top: -50px;
+  text-align: center;
 }
 
 .career-video {
   width: 100%;
-  height: auto;
+  height: 350px; /* এখানে আপনার প্রয়োজনমতো হাইট (যেমন: 250px বা 300px) সেট করুন */
+  object-fit: cover; /* এটি ভিডিওর অনুপাত ঠিক রাখবে যাতে স্ট্রেচ না হয় */
   border-radius: 8px;
-}
-
-/* মোবাইল রেসপন্সিভনেস */
-@media (max-width: 768px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-  }
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 5px;
 }
