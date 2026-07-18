@@ -70,15 +70,27 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className="d-flex align-items-center gap-3 text-white social-icons">
-                <div className="position-relative py-3" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
+              <div className="d-flex align-items-center gap-3 text-white social-icons " >
+                <div className="position-relative py-3" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)} style={{ marginRight: '45px' }} >
                   <FaUniversalAccess className="fs-5 cursor-pointer" />
                   {isDropdownOpen && (
                     <div className="dropdown-menu-custom">
                       <ul className="list-unstyled mb-0 small fw-bold text-start">
-                        <li className="py-2 cursor-pointer border-bottom ps-4">Leichte Sprache</li>
-                        <li className="py-2 cursor-pointer border-bottom ps-4">Gebärdensprache</li>
-                        <li className="py-2 cursor-pointer ps-4">Barrierefreiheit</li>
+                        <li className="py-2 cursor-pointer border-bottom ps-4">
+                          <Link to="/leichte-sprache" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            Leichte Sprache
+                          </Link>
+                        </li>
+                        <li className="py-2 cursor-pointer border-bottom ps-4">
+                          <Link to="/sign-language" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            Gebärdensprache
+                          </Link>
+                        </li>
+                        <li className="py-2 cursor-pointer ps-4">
+                        <Link to="/accessibility-statement" style={{ textDecoration: 'none', color: 'inherit' }}>
+                          Barrierefreiheit
+                        </Link>
+                      </li>
                       </ul>
                     </div>
                   )}

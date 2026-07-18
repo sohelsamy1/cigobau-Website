@@ -4,12 +4,13 @@ import './Career.css';
 const Career = () => {
   return (
     <div className="career-page">
+  
       {/* ১. ব্যানার সেকশন */}
-      <section className="career-banner">
-        <div className="banner-content">
-          <h1>Karriere bei CIGO-BAU</h1>
-        </div>
-      </section>
+        <section className="career-banner">
+          <div className="banner-content">
+            <div className="text-box">Karriere bei CIGO-BAU</div>
+          </div>
+        </section>
 
       {/* ২. আর্টিকেল সেকশন (সাদা ব্যাকগ্রাউন্ড) */}
       <section className="info-section-clean">

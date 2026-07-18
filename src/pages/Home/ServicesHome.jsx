@@ -42,7 +42,7 @@ const ServicesHome = () => {
   const data = servicesData[activeTab];
 
   return (
-    <section className="py-5" style={{ backgroundColor: '#f5f6f8' }}>
+    <section className="py-5" style={{ backgroundColor: '#f5f6f8' ,marginTop: '40px' }}>
       <div className="container custom-box-width">
         
         {/* ডাইনামিক হেডার আর্টিকেল */}

@@ -24,7 +24,7 @@ header .custom-box-width {
 /* এটি শুধুমাত্র হেডারের nav এর ভেতরের বক্সকে প্রভাবিত করবে */
 header nav.navbar .custom-box-width {
     padding-left: 45px !important;
-    padding-right: 45px !important; /* ভারসাম্য রক্ষার জন্য ডান পাশেও প্যাডিং দিন */
+    padding-right: 52px !important; /* ভারসাম্য রক্ষার জন্য ডান পাশেও প্যাডিং দিন */
 }
 
 /* বড় স্ক্রিনে সামান্য প্যাডিং যাতে একদম লেগে না যায় */

@@ -1,0 +1,18 @@
+.sign-language-page {
+  max-width: 800px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content-section h1 {
+  font-weight: 800;
+  color: #000;
+  border-bottom: 2px solid #468DFF;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}

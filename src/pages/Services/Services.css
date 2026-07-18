@@ -1,7 +1,15 @@
 .services-section {
   position: relative;
   width: 100%;
-  height: 400px; /* আপনার প্রয়োজন অনুযায়ী উচ্চতা ঠিক করুন */
+  height: 400px; /* আপনার প্রয়োজন অনুযায়ী উচ্চতা */
+  overflow: hidden;
+}
+
+
+.services-section {
+  position: relative;
+  width: 100%;
+  height: 445px; /* এখানে আপনার প্রয়োজনমতো উচ্চতা বাড়িয়ে দিন (যেমন: 500px, 600px বা 700px) */
   overflow: hidden;
 }
 
@@ -10,24 +18,29 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* ভিডিওটি যেন পুরোপুরি ফিট হয় */
+  height: 100%; /* এটি কন্টেইনারের উচ্চতা অনুযায়ী নিজেকে বড় করে নেবে */
+  object-fit: cover; 
 }
+
 
 .content-overlay {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: flex-end; /* ডান দিকে টেক্সট রাখার জন্য */
-  align-items: center;
+  justify-content: center; /* লেখাটি অনুভূমিকভাবে সেন্টারে আনার জন্য */
+  align-items: center;     /* লেখাটি লম্বালম্বিভাবে সেন্টারে আনার জন্য */
   height: 100%;
-  padding-right: 50px; /* ডানে জায়গা রাখার জন্য */
+  width: 100%;
 }
 
 .text-box {
-  background-color: #3b82f6; /* নীল রঙ */
-  padding: 15px 30px;
+  background-color: #4a86e8;
+  padding: 10px 20px;
   color: white;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 520;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
 }
+

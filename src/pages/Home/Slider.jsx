@@ -8,25 +8,25 @@ import './Slider.css';
 
 const Slider = () => {
   const projects = [
-    { title: 'BÜROGEBÄUDE', src: '/References/RefImg2.webp' },
-    { title: 'WOHNANLAGEN', src: '/expert1.png' },
-    { title: 'ROHBAU & BAUARBEITEN', src: '/Reference3.webp' },
-    { title: 'INDUSTRIE & GEWERBE', src: '/Reference4.webp' },
-    { title: 'PRAXEN & KANZLEIEN', src: '/Reference5.webp' },
-    { title: 'EINKAUFSZENTREN', src: '/Reference6.webp' },
-    { title: 'SCHULBAU', src: '/Reference7.webp' },
-    { title: 'LOGISTIKZENTREN', src: '/Reference8.webp' },
-    { title: 'HOTELANLAGEN', src: '/Reference9.webp' },
-    { title: 'SPORTZENTREN', src: '/Reference10.webp' },
-    { title: 'KLINIKEN', src: '/Reference11.webp' },
-    { title: 'PARKHÄUSER', src: '/Reference12.webp' },
-    { title: 'KULTURZENTREN', src: '/Reference13.webp' }
+    { title: 'BÜROGEBÄUDE', src: '/References/RefImg1.webp' },
+    { title: 'WOHNANLAGEN', src: '/References/RefImg2.webp' },
+    { title: 'ROHBAU & BAUARBEITEN', src: '/References/RefImg3.webp' },
+    { title: 'INDUSTRIE & GEWERBE', src: '/References/RefImg4.webp' },
+    { title: 'PRAXEN & KANZLEIEN', src: '/References/RefImg5.webp' },
+    { title: 'EINKAUFSZENTREN', src: '/References/RefImg6.webp' },
+    { title: 'SCHULBAU', src: '/References/RefImg7.webp' },
+    { title: 'LOGISTIKZENTREN', src: '/References/RefImg8.webp' },
+    { title: 'HOTELANLAGEN', src: '/References/RefImg9.webp' },
+    { title: 'SPORTZENTREN', src: '/References/RefImg10.webp' },
+    { title: 'KLINIKEN', src: '/References/RefImg11.webp'},
+    { title: 'PARKHÄUSER', src: '/References/RefImg12.webp' },
+    { title: 'KULTURZENTREN', src: '/References/RefImg13.webp' }
   ];
 
   return (
     <div className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="container">
-        <h5 className="fw-bold mb-4 text-center" style={{ color: '#0f2c59', marginBottom: '40px' }}>
+        <h5 className="fw-bold mb-4 text-center" style={{ color: '#2a7af1', marginBottom: '40px' }}>
           AUSZUG UNSERER PROJEKTE
         </h5>
 

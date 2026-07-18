@@ -1,0 +1,20 @@
+.accessibility-page {
+  max-width: 800px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.content-section h1 {
+  font-weight: 800;
+  color: #000;
+}
+
+.content-section h2 {
+  font-weight: 700;
+  color: #468DFF;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}

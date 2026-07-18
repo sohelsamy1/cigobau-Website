@@ -1,6 +1,6 @@
 import React from 'react';
 import './References.css';
-
+import Testimonial from '../Home/Testimonial'; 
 const References = () => {
   const projects = [
     { title: "Industriebau Berlin", desc: "Komplette Rohbauarbeiten für Logistikzentren." },
@@ -10,16 +10,18 @@ const References = () => {
   ];
 
   return (
-    <div className="references-page">
+    <div className="references-page"  >
       {/* ব্যানার ভিডিও সেকশন */}
-      <section className="banner-section">
+      <section className="banner-section" style={{ marginBottom: '50px' }}>
         <video className="banner-video" autoPlay loop muted playsInline>
           <source src="/References/ReferencesBannerVideo.mp4" type="video/mp4" />
         </video>
         <div className="banner-overlay">
-          <div className="banner-text">Referenzen</div>
+          <div className="text-box">Allgemeine Ausführen</div>
         </div>
       </section>
+
+      <Testimonial />
 
       {/* টেক্সট সেকশন */}
       <section className="info-section container text-center">
@@ -27,7 +29,8 @@ const References = () => {
         <div className="divider"></div>
         <p>Gewinnen Sie einen Einblick in unsere fachgerechte Bauausführung und präzise Umsetzung anspruchsvoller Bauvorhaben.</p>
       </section>
-
+   
+     
       {/* প্রজেক্ট গ্রিড সেকশন */}
       <section className="projects-grid container">
         <div className="row">

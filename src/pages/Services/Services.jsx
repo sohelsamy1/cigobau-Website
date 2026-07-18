@@ -24,8 +24,9 @@ const Services = () => {
       </section>
 
       {/* ২. ভিডিও সেকশনের নিচে আপনার কার্ডগুলো এখানে বসিয়ে দিন   DUPLICATE  */}
-      <ProfessionalSections />
       <ServicesHome />
+      <ProfessionalSections />
+      
     </>
   );
 };
