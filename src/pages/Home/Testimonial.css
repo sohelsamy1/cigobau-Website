@@ -1,4 +1,15 @@
-/* ১. কমন বক্স স্টাইল (সব বক্সের জন্য) */
+/* গ্লোবাল প্যাডিং ফিক্স */
+.custom-box-width {
+    width: 100% !important;
+    max-width: 1300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box;
+}
+
+/* কমন বক্স স্টাইল */
 .ref-box, .sasse-box-container {
   display: flex;
   flex-direction: column;
@@ -8,17 +19,12 @@
   border: 1px solid #e2e8f0;
   text-align: center;
   margin-bottom: 10px;
-  min-height: 120px;/* উচ্চতা বজায় রাখতে */
-  height: 82%;
+  min-height: 120px;
+  height: 90%; 
   margin-top: 15px;
-   
 }
 
-/* ইমেজ কার্ডের জন্য*/
-.ref-box {
-  align-items: center;
-  justify-content: flex-start;
-}
+.ref-box { align-items: center; justify-content: flex-start; }
 
 .ref-img-container {
   height: 50px;
@@ -29,13 +35,8 @@
   margin-bottom: 10px;
 }
 
-.ref-img-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
+.ref-img-container img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
-/* আর্টিকেল টেক্সট (সব বক্সের জন্য কমন) */
 .ref-description {
   font-size: 10px;
   line-height: 1.4;
@@ -45,15 +46,12 @@
   display: block;
 }
 
-/* স্যাস বক্সের জন্য ইউনিক কন্টেইনার */
-.sasse-box-container {
-  justify-content: center;
-}
+.sasse-box-container { justify-content: center; }
 
 .sasse-title {
-  font-size: 16px;
+  font-size: 12px;
   color: #dc2626;
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Arial Black', sans-serif;
   display: block;
 }
@@ -74,7 +72,4 @@
   display: block;
 }
 
-/* Swiper Pagination */
-.swiper-pagination-bullet-active {
-  background-color: #468DFF!important;
-}
+.swiper-pagination-bullet-active { background-color: #468DFF!important; }

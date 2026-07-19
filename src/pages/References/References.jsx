@@ -1,6 +1,8 @@
 import React from 'react';
 import './References.css';
 import Testimonial from '../Home/Testimonial'; 
+import Slider from '../Home/Slider'; 
+
 const References = () => {
   const projects = [
     { title: "Industriebau Berlin", desc: "Komplette Rohbauarbeiten für Logistikzentren." },
@@ -10,7 +12,7 @@ const References = () => {
   ];
 
   return (
-    <div className="references-page"  >
+    <div className="references-page">
       {/* ব্যানার ভিডিও সেকশন */}
       <section className="banner-section" style={{ marginBottom: '50px' }}>
         <video className="banner-video" autoPlay loop muted playsInline>
@@ -23,16 +25,15 @@ const References = () => {
 
       <Testimonial />
 
-      {/* টেক্সট সেকশন */}
-      <section className="info-section container text-center">
+      {/* টেক্সট সেকশন: container এর বদলে custom-box-width */}
+      <section className="info-section custom-box-width text-center">
         <h2>Hier präsentieren wir Ihnen eine Auswahl unserer Hochbau-Projekte</h2>
         <div className="divider"></div>
         <p>Gewinnen Sie einen Einblick in unsere fachgerechte Bauausführung und präzise Umsetzung anspruchsvoller Bauvorhaben.</p>
       </section>
    
-     
-      {/* প্রজেক্ট গ্রিড সেকশন */}
-      <section className="projects-grid container">
+      {/* প্রজেক্ট গ্রিড সেকশন: container এর বদলে custom-box-width */}
+      <section className="projects-grid custom-box-width">
         <div className="row">
           {projects.map((proj, index) => (
             <div key={index} className="col-md-6 col-lg-3">
@@ -46,8 +47,8 @@ const References = () => {
         </div>
       </section>
       
+      <Slider />
     </div>
-   
   );
 };
 

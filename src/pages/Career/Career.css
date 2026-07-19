@@ -1,3 +1,14 @@
+/* গ্লোবাল প্যাডিং ফিক্স */
+.custom-box-width {
+  width: 100% !important;
+  max-width: 1300px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box;
+}
+
 /* ব্যানার স্টাইল */
 .career-banner {
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/Career/CareerBanner.webp');
@@ -9,7 +20,7 @@
   justify-content: center;
 }
 
-/* নীল বক্স ডিজাইন (আপনার আগের ডিজাইনের মতো) */
+/* নীল বক্স ডিজাইন */
 .text-box {
   background-color: #4a86e8;
   padding: 10px 20px;
@@ -21,7 +32,7 @@
   border-radius: 5px;
 }
 
-/* বাকি আগের স্টাইলগুলো ঠিক থাকবে */
+/* ইনফো সেকশন */
 .info-section-clean {
   padding: 80px 0;
   text-align: center;
@@ -50,6 +61,7 @@
   color: #ffffff;
 }
 
+/* ভিডিও সেকশন */
 .video-grid {
   padding: 60px 0;
 }

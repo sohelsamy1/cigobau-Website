@@ -20,7 +20,7 @@ const EasyLanguage = () => {
         {/* কার্ড ১ */}
         <div className="col-md-6 mb-4">
           <div className="info-card">
-            <img src="/path-to-your-image1.jpg" alt="Barrierefreiheit" className="card-img-top" />
+            <img src="/Language/Language1.webp" alt="Barrierefreiheit" className="card-img-top" />
             <div className="card-body">
               <h3>Erklärung zur Barriere-Freiheit</h3>
               <p>Die wichtigsten Infos in Leichter Sprache zur Barriere-Freiheit. Hier findest du unsere wichtigsten Barrieren.</p>
@@ -31,10 +31,10 @@ const EasyLanguage = () => {
         {/* কার্ড ২ */}
         <div className="col-md-6 mb-4">
           <div className="info-card">
-            <img src="/path-to-your-image2.jpg" alt="Gebärdensprache" className="card-img-top" />
+            <img src="/Language/Language2.webp" alt="Gebärdensprache" className="card-img-top" />
             <div className="card-body">
               <h3>Gebärdensprache</h3>
-              <p>Hier gibt es alle Informationen in Gebärden-Sprache.</p>
+              <p>Hier finden Sie sämtliche Informationen ausführlich in Gebärden-Sprache.</p>
             </div>
           </div>
         </div>

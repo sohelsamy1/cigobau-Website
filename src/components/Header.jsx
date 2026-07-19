@@ -1,6 +1,6 @@
 // src/components/Header.jsx
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaPhoneAlt, FaMobileAlt, FaEnvelope, FaInstagram, FaTwitter, FaFacebookF, FaUniversalAccess, FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
 
@@ -66,31 +66,32 @@ const Header = () => {
               <ul className="navbar-nav d-flex flex-row">
                 {navLinks.map((link, index) => (
                   <li key={index} className="nav-item">
-                    <Link className="nav-link px-3 text-white fs-6 fw-normal" to={link.path}>{link.name}</Link>
+                   
+                   <NavLink 
+                      className="nav-link px-3 text-white fw-bold position-relative" 
+                      to={link.path}
+                      end={link.path === '/'}
+                    >
+                      {link.name}
+                    </NavLink>
                   </li>
                 ))}
               </ul>
-              <div className="d-flex align-items-center gap-3 text-white social-icons " >
-                <div className="position-relative py-3" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)} style={{ marginRight: '45px' }} >
+              <div className="d-flex align-items-center gap-4 text-white social-icons">
+                <div className="position-relative py-3" onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)} style={{ marginRight: '25px' }} >
                   <FaUniversalAccess className="fs-5 cursor-pointer" />
                   {isDropdownOpen && (
                     <div className="dropdown-menu-custom">
                       <ul className="list-unstyled mb-0 small fw-bold text-start">
                         <li className="py-2 cursor-pointer border-bottom ps-4">
-                          <Link to="/leichte-sprache" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            Leichte Sprache
-                          </Link>
+                          <Link to="/leichte-sprache" style={{ textDecoration: 'none', color: 'inherit' }}>Leichte Sprache</Link>
                         </li>
                         <li className="py-2 cursor-pointer border-bottom ps-4">
-                          <Link to="/sign-language" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            Gebärdensprache
-                          </Link>
+                          <Link to="/sign-language" style={{ textDecoration: 'none', color: 'inherit' }}>Gebärdensprache</Link>
                         </li>
                         <li className="py-2 cursor-pointer ps-4">
-                        <Link to="/accessibility-statement" style={{ textDecoration: 'none', color: 'inherit' }}>
-                          Barrierefreiheit
-                        </Link>
-                      </li>
+                          <Link to="/accessibility-statement" style={{ textDecoration: 'none', color: 'inherit' }}>Barrierefreiheit</Link>
+                        </li>
                       </ul>
                     </div>
                   )}

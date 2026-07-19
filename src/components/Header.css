@@ -7,27 +7,22 @@
 .icon-size-lg { font-size: 1.5rem; }
 .icon-size-md { font-size: 1.4rem; }
 
-/* লোগো বক্স ফিক্স - বাম দিকের বাড়তি জায়গা সরানো হয়েছে */
+/* লোগো বক্স ফিক্স */
 .logo-box-1 { width: 100px; margin-left: 0px; }
 .logo-box-2 { width: 90px; margin-left: 40px; }
 
-/* হেডারের কাস্টম উইডথ ফিক্স - বাম দিকের গ্যাপ দূর করার জন্য */
 header .custom-box-width {
-    margin-left: auto ;
+    margin-left: auto;
     margin-right: auto;
     padding-left: 0; 
     padding-right: 0;
 }
 
-
-/* হেডার নেভিগেশন বারের বাম দিকের প্যাডিং সেট করা */
-/* এটি শুধুমাত্র হেডারের nav এর ভেতরের বক্সকে প্রভাবিত করবে */
 header nav.navbar .custom-box-width {
     padding-left: 45px !important;
-    padding-right: 52px !important; /* ভারসাম্য রক্ষার জন্য ডান পাশেও প্যাডিং দিন */
+    padding-right: 52px !important;
 }
 
-/* বড় স্ক্রিনে সামান্য প্যাডিং যাতে একদম লেগে না যায় */
 @media (min-width: 992px) {
     header .custom-box-width {
         padding-left: 15px; 
@@ -35,53 +30,86 @@ header nav.navbar .custom-box-width {
     }
 }
 
+/* নেভিগেশন লিঙ্ক ও স্লাইড ইফেক্ট */
+.nav-link {
+    position: relative;
+    color: white !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    transition: color 0.3s ease;
+  font-weight: 550 !important; /* ফন্ট মোটা করার জন্য */
+    font-size: 1rem; /* ফন্ট বড় করার জন্য ১.১ বা ১.২ দিন, ছোট করতে চাইলে ০.৯ দিন */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* পয়েন্টার চিকন করার জন্য ২px দিলাম */
+    background-color: white;
+    border-radius: 2px 2px 0 0;
+    transition: width 0.4s ease-out;
+}
+
+/* হোভার করলে বাম থেকে বড় হবে */
+.nav-link:hover::after {
+    width: calc(100% - 32px);
+}
+
+/* অ্যাক্টিভ লিঙ্কের জন্য সবসময় পয়েন্টার থাকবে */
+.nav-link.active-nav-link::after {
+    width: calc(100% - 32px);
+}
+
 .btn-kontakt {
-  background-color: #468DFF;
-  color: white;
-  padding: 8px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  text-transform: lowercase;
-  transition: 0.3s;
+    background-color: #468DFF;
+    color: white;
+    padding: 8px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: lowercase;
+    transition: 0.3s;
 }
 .btn-kontakt:hover { background-color: #357ae8; color: white; }
 
 .dropdown-menu-custom {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: white;
-  color: #333;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  padding: 10px;
-  width: 250px;
-  z-index: 1050;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    z-index: 1050;
 }
 
 .sidebar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2000;
 }
 
 .mobile-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 280px;
-  background: white;
-  z-index: 2001;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background: white;
+    z-index: 2001;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 
 .mobile-sidebar.open {
-  transform: translateX(0);
+    transform: translateX(0);
 }

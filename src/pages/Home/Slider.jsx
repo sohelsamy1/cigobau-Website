@@ -8,24 +8,25 @@ import './Slider.css';
 
 const Slider = () => {
   const projects = [
-    { title: 'BÜROGEBÄUDE', src: '/References/RefImg1.webp' },
-    { title: 'WOHNANLAGEN', src: '/References/RefImg2.webp' },
-    { title: 'ROHBAU & BAUARBEITEN', src: '/References/RefImg3.webp' },
-    { title: 'INDUSTRIE & GEWERBE', src: '/References/RefImg4.webp' },
-    { title: 'PRAXEN & KANZLEIEN', src: '/References/RefImg5.webp' },
-    { title: 'EINKAUFSZENTREN', src: '/References/RefImg6.webp' },
-    { title: 'SCHULBAU', src: '/References/RefImg7.webp' },
-    { title: 'LOGISTIKZENTREN', src: '/References/RefImg8.webp' },
-    { title: 'HOTELANLAGEN', src: '/References/RefImg9.webp' },
-    { title: 'SPORTZENTREN', src: '/References/RefImg10.webp' },
-    { title: 'KLINIKEN', src: '/References/RefImg11.webp'},
-    { title: 'PARKHÄUSER', src: '/References/RefImg12.webp' },
-    { title: 'KULTURZENTREN', src: '/References/RefImg13.webp' }
+    { title: 'BÜROGEBÄUDE', src: '/Slider/RefImg1.webp' },
+    { title: 'WOHNANLAGEN', src: '/Slider/RefImg2.webp' },
+    { title: 'ROHBAU & BAUARBEITEN', src: '/Slider/RefImg3.webp' },
+    { title: 'INDUSTRIE & GEWERBE', src: '/Slider/RefImg4.webp' },
+    { title: 'PRAXEN & KANZLEIEN', src: '/Slider/RefImg5.webp' },
+    { title: 'EINKAUFSZENTREN', src: '/Slider/RefImg6.webp' },
+    { title: 'SCHULBAU', src: '/Slider/RefImg7.webp' },
+    { title: 'LOGISTIKZENTREN', src: '/Slider/RefImg8.webp' },
+    { title: 'HOTELANLAGEN', src: '/Slider/RefImg9.webp' },
+    { title: 'SPORTZENTREN', src: '/Slider/RefImg10.webp' },
+    { title: 'KLINIKEN', src: '/Slider/RefImg11.webp'},
+    { title: 'PARKHÄUSER', src: '/Slider/RefImg12.webp' },
+    { title: 'KULTURZENTREN', src: '/Slider/RefImg13.webp' }
   ];
 
   return (
     <div className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
-      <div className="container">
+      {/* গ্লোবাল CSS ক্লাস এখানে ব্যবহার করা হলো */}
+      <div className="custom-box-width">
         <h5 className="fw-bold mb-4 text-center" style={{ color: '#2a7af1', marginBottom: '40px' }}>
           AUSZUG UNSERER PROJEKTE
         </h5>

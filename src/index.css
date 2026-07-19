@@ -4,6 +4,7 @@
   --top-margin: -10px;
   --bottom-margin: 30px;
   --max-width: 1300px;
+  --side-padding: 20px; /* নতুন ভেরিয়েবল হিসেবে প্যাডিং সেট করে রাখলাম */
 }
 
 /* কন্টেন্ট বক্স - যা হেডার, ফুটার এবং সব পেজে কাজ করবে */
@@ -11,8 +12,11 @@
   width: 100% !important;
   max-width: var(--max-width) !important;
   margin: var(--top-margin) auto var(--bottom-margin) auto !important;
-  padding-left: 60px !important;
-  padding-right: 60px !important;
+  
+  /* দুই সাইডের প্যাডিং উল্লেখ করা হলো */
+  padding-left: var(--side-padding) !important;
+  padding-right: var(--side-padding) !important;
+  
   box-sizing: border-box;
   display: block;
   margin-left: auto !important;
@@ -22,6 +26,7 @@
 /* রেসপন্সিভ - মোবাইলের জন্য */
 @media (max-width: 991px) {
   .custom-box-width { 
+    /* মোবাইলে প্যাডিং বাড়ানো হলো */
     padding-left: 30px !important; 
     padding-right: 30px !important; 
   }
@@ -37,10 +42,13 @@ body {
 
 /* হেডার ফিক্স করার জন্য */
 header .custom-box-width {
-  margin: 0 auto !important; /* হেডারে মার্জিন সাধারণত ০ হয় */
+  margin: 0 auto !important; 
+  padding-left: var(--side-padding) !important;
+  padding-right: var(--side-padding) !important;
 }
 
 /* ফুটার ফিক্স */
 footer {
   width: 100% !important;
-  display: block;}
+  display: block;
+}

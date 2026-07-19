@@ -7,7 +7,7 @@ const ServicesHome = () => {
       header: "Profitieren Sie von einem starken Partner in der Baubranche.",
       subText: "Wir verfügen über langjährige und umfassende Erfahrung in der Planung und Verarbeitung verschiedenster Materialien im Cigo-Bau.",
       title: "HOCHBAU",
-      image: "/expert1.png",
+      image: "/Home/HomeImg3.webp",
       items: [
         { title: "Unsere Qualitätsstandards", desc: "Termintreue, Kostensicherheit und Qualität haben höchste Priorität.", icon: "👷" },
         { title: "Unser Portfolio", desc: "Realisierung von öffentlichen Gebäuden, Industriebauten und Renovierungen!", icon: "🏗️" },
@@ -18,7 +18,7 @@ const ServicesHome = () => {
       header: "Präzision und Zuverlässigkeit im Ingenieurbau.",
       subText: "Wir bewältigen komplexe bauliche Aufgaben mit moderner Technologie und zertifizierter Fachkompetenz.",
       title: "ROHBAU",
-      image: "/Home/HomeImg3.webp",
+      image: "/Home/HomeImg2.webp",
       items: [
         { title: "Strukturplanung", desc: "Präzise Planung für komplexe Bauteile.", icon: "📐" },
         { title: "Sicherheit zuerst", desc: "Höchste Sicherheitsstandards für jede Projektphase.", icon: "🛡️" },

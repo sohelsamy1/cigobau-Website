@@ -1,117 +1,34 @@
-/* ব্যানার স্টাইল */
-.contact-banner {
-  position: relative;
-  width: 100%;
-  height: 400px;
+/* গ্লোবাল প্যাডিং ফিক্স */
+.custom-box-width {
+  width: 100% !important;
+  max-width: 1300px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box;
 }
 
-.contact-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* ব্যানার */
+.contact-banner { position: relative; width: 100%; height: 400px; }
+.contact-banner img { width: 100%; height: 100%; object-fit: cover; }
+.banner-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; }
+.text-box { background-color: #4a86e8; padding: 10px 20px; color: white; font-size: 1.8rem; font-weight: 520; text-transform: uppercase; text-align: center; border-radius: 5px; }
 
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* সামান্য অন্ধকার যাতে লেখা ফুটে ওঠে */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* ফর্ম এবং কন্টেন্ট */
+.contact-content { padding: 50px 0; }
+.section-title { color: #4a86e8; margin-bottom: 20px; font-weight: bold; }
+.form-control { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; }
+.btn-send { background-color: #4a86e8; color: white; border: none; padding: 12px 30px; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+.btn-send:hover { background-color: #357abd; }
 
-/* প্রফেশনাল নীল বক্স */
-.text-box {
-  background-color: #4a86e8;
-  padding: 10px 20px;
-  color: white;
-  font-size: 1.8rem;
-  font-weight: 520;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 5px;
-}
+/* অফিস আওয়ার্স */
+.office-hours-box { background-color: #f8f9fa; padding: 30px; border-left: 5px solid #4a86e8; border-radius: 4px; }
+.office-hours-box h3 { color: #4a86e8; margin-bottom: 20px; }
+.office-hours-box li { padding: 8px 0; border-bottom: 1px solid #eee; }
+.office-hours-box li span { font-weight: bold; display: inline-block; width: 100px; }
+.closed { color: #d9534f; font-weight: bold; }
 
-.contact-content {
-  padding: 50px 0;
-}
-
-.section-title {
-  color: #4a86e8;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-/* ফর্ম স্টাইল */
-.form-control {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.btn-send {
-  background-color: #4a86e8;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-send:hover {
-  background-color: #357abd;
-}
-
-/* অফিস আওয়ার্স বক্স */
-.office-hours-box {
-  background-color: #f8f9fa;
-  padding: 30px;
-  border-left: 5px solid #4a86e8;
-  border-radius: 4px;
-}
-
-.office-hours-box h3 {
-  color: #4a86e8;
-  margin-bottom: 20px;
-}
-
-.office-hours-box li {
-  padding: 8px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.office-hours-box li span {
-  font-weight: bold;
-  display: inline-block;
-  width: 100px;
-}
-
-.closed {
-  color: #d9534f;
-  font-weight: bold;
-}
-
-/* ম্যাপ সেকশন */
-.map-section {
-  background-color: #f8f9fa;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 50px 0;
-}
-
-.map-placeholder {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 1px solid #1b6fec;
-}
+/* ম্যাপ */
+.map-section { background-color: #f8f9fa; width: 100%; padding: 50px 0; }
+.map-placeholder { width: 100%; overflow: hidden; border-radius: 5px; border: 1px solid #1b6fec; }
