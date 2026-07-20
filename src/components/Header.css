@@ -1,4 +1,5 @@
-/* Header.css */
+/* src/components/Header.css */
+
 .header-padding { padding-left: 6%; padding-right: 6%; }
 .bg-brand-blue { background-color: #468DFF !important; }
 .text-brand-blue { color: #468DFF !important; }
@@ -8,26 +9,27 @@
 .icon-size-md { font-size: 1.4rem; }
 
 /* লোগো বক্স ফিক্স */
-.logo-box-1 { width: 100px; margin-left: 0px; }
+.logo-box-1 { width: 100px; }
 .logo-box-2 { width: 90px; margin-left: 40px; }
 
+/* গ্লোবাল কন্টেইনার ফিক্স */
 header .custom-box-width {
     margin-left: auto;
     margin-right: auto;
+    /* index.css থেকে প্যাডিং পাওয়ার জন্য এখানে ০ রাখা হয়েছে */
     padding-left: 0; 
     padding-right: 0;
 }
 
+/* নেভিগেশন বার রিসেট */
 header nav.navbar .custom-box-width {
-    padding-left: 45px !important;
-    padding-right: 52px !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-@media (min-width: 992px) {
-    header .custom-box-width {
-        padding-left: 15px; 
-        padding-right: -15px;
-    }
+/* বাম পাশের গ্যাপ দূর করা */
+.navbar-nav .nav-item:first-child .nav-link {
+    padding-left: 0 !important;
 }
 
 /* নেভিগেশন লিঙ্ক ও স্লাইড ইফেক্ট */
@@ -37,32 +39,44 @@ header nav.navbar .custom-box-width {
     padding-left: 16px !important;
     padding-right: 16px !important;
     transition: color 0.3s ease;
-  font-weight: 550 !important; /* ফন্ট মোটা করার জন্য */
-    font-size: 1rem; /* ফন্ট বড় করার জন্য ১.১ বা ১.২ দিন, ছোট করতে চাইলে ০.৯ দিন */
+    font-weight: 550 !important;
+    font-size: 1rem;
 }
 
+
+
+/* ১. সব লিঙ্কের জন্য ডিফল্ট ইফেক্ট */
 .nav-link::after {
     content: '';
     position: absolute;
-    left: 16px;
     bottom: 0;
+    left: 16px; /* প্রথম লিঙ্ক বাদে বাকিদের জন্য */
     width: 0;
-    height: 2px; /* পয়েন্টার চিকন করার জন্য ২px দিলাম */
+    height: 2px;
     background-color: white;
-    border-radius: 2px 2px 0 0;
-    transition: width 0.4s ease-out;
+    transition: width 0.3s ease; /* মাউস সরালে দ্রুত চলে যাওয়ার জন্য transition */
 }
 
-/* হোভার করলে বাম থেকে বড় হবে */
+/* ২. মাউস হোভার করলে পয়েন্টার আসবে */
 .nav-link:hover::after {
     width: calc(100% - 32px);
 }
 
-/* অ্যাক্টিভ লিঙ্কের জন্য সবসময় পয়েন্টার থাকবে */
-.nav-link.active-nav-link::after {
-    width: calc(100% - 32px);
+/* ৩. প্রথম লিঙ্কের জন্য আলাদা পজিশন */
+.navbar-nav .nav-item:first-child .nav-link::after {
+    left: 0px !important;
 }
 
+/* ৪. প্রথম লিঙ্কে হোভার করলে ৮% উইডথ */
+.navbar-nav .nav-item:first-child .nav-link:hover::after {
+    width: 75% !important;
+}
+
+
+
+
+
+/* বাটন ও ড্রপডাউন */
 .btn-kontakt {
     background-color: #468DFF;
     color: white;
@@ -88,6 +102,7 @@ header nav.navbar .custom-box-width {
     z-index: 1050;
 }
 
+/* মোবাইল সাইডবার */
 .sidebar-overlay {
     position: fixed;
     top: 0;

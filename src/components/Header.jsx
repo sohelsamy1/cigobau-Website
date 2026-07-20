@@ -68,7 +68,7 @@ const Header = () => {
                   <li key={index} className="nav-item">
                    
                    <NavLink 
-                      className="nav-link px-3 text-white fw-bold position-relative" 
+                      className="nav-link  text-white fw-bold position-relative" 
                       to={link.path}
                       end={link.path === '/'}
                     >
