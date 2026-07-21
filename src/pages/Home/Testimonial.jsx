@@ -19,12 +19,12 @@ const Testimonial = () => {
       <div className="custom-box-width mb-5">
         <div className="row g-4 align-items-stretch">
           
-          <div className="col-12 col-lg-7 d-flex flex-column justify-content-center">
-            <h5 className="fw-bold mb-3 text-center text-lg-start" style={{ color: '#468DFF', letterSpacing: '1px', fontSize: '14px' }}>
+          <div className="col-12 col-lg-7 d-flex flex-column justify-content-center" >
+            <h5 className="fw-bold mb-3 text-center text-lg-start" style={{  color: '#468DFF', letterSpacing: '1px', fontSize: '14px' }}>
               UNSERE REFERENZPARTNER
             </h5>
             <div className="row g-2 align-items-center justify-content-center py-3 border-top border-bottom h-100">
-              <div className="row">
+              <div className="row" style={{ paddingBottom: '11px'}}>
                 
                 {/* Box 1 */}
                 <div className="col-6 col-md-4">

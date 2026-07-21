@@ -34,9 +34,10 @@
 
 /* ইনফো সেকশন */
 .info-section-clean {
-  padding: 80px 0;
+  background-color: #fcfcfc; /* এখানে আপনার পছন্দমতো ব্যাকগ্রাউন্ড কালার দিন */
+  padding-top: 60px;       /* টপ প্যাডিং */
+  padding-bottom: 60px;    /* বটম প্যাডিং */
   text-align: center;
-  background-color: #ffffff !important;
 }
 
 .divider {

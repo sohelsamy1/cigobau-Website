@@ -14,7 +14,7 @@ const References = () => {
   return (
     <div className="references-page">
       {/* ব্যানার ভিডিও সেকশন */}
-      <section className="banner-section" style={{ marginBottom: '50px' }}>
+      <section className="banner-section" style={{ marginBottom: '0px' }}>
         <video className="banner-video" autoPlay loop muted playsInline>
           <source src="/References/ReferencesBannerVideo.mp4" type="video/mp4" />
         </video>
@@ -26,14 +26,14 @@ const References = () => {
       <Testimonial />
 
       {/* টেক্সট সেকশন: container এর বদলে custom-box-width */}
-      <section className="info-section custom-box-width text-center">
+      <section className="info-section custom-box-width text-center" style={{ paddingBottom: '30px' }}>
         <h2>Hier präsentieren wir Ihnen eine Auswahl unserer Hochbau-Projekte</h2>
         <div className="divider"></div>
         <p>Gewinnen Sie einen Einblick in unsere fachgerechte Bauausführung und präzise Umsetzung anspruchsvoller Bauvorhaben.</p>
       </section>
    
       {/* প্রজেক্ট গ্রিড সেকশন: container এর বদলে custom-box-width */}
-      <section className="projects-grid custom-box-width">
+      <section className="projects-grid custom-box-width" style={{ paddingBottom: '35px' }}>
         <div className="row">
           {projects.map((proj, index) => (
             <div key={index} className="col-md-6 col-lg-3">

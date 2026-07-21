@@ -19,10 +19,10 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/references" element={<References />} />
-            <Route path="/career" element={<Career />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/Leistungen" element={<Services />} />
+            <Route path="/Referenzen" element={<References />} />
+            <Route path="/Karriere" element={<Career />} />
+            <Route path="/Kontakt" element={<Contact />} />
             <Route path="/leichte-sprache" element={<EasyLanguage />} />
             <Route path="/sign-language" element={<Signlanguage />} />
             <Route path="/accessibility-statement" element={<Accessibilitystatement />} />

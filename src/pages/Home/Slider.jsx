@@ -1,3 +1,4 @@
+// src/components/Slider.jsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -24,10 +25,9 @@ const Slider = () => {
   ];
 
   return (
-    <div className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
-      {/* গ্লোবাল CSS ক্লাস এখানে ব্যবহার করা হলো */}
+    <div className="slider-section-wrapper">
       <div className="custom-box-width">
-        <h5 className="fw-bold mb-4 text-center" style={{ color: '#2a7af1', marginBottom: '40px' }}>
+        <h5 className="slider-section-title">
           AUSZUG UNSERER PROJEKTE
         </h5>
 
@@ -38,7 +38,7 @@ const Slider = () => {
           loop={true} 
           autoplay={{ delay: 2500, disableOnInteraction: false }} 
           pagination={{ clickable: true }}
-          style={{ paddingBottom: '50px' }} 
+          className="slider-swiper-container"
           breakpoints={{ 
             320: { slidesPerView: 1 }, 
             576: { slidesPerView: 2 }, 
@@ -48,14 +48,14 @@ const Slider = () => {
         >
           {projects.map((p, i) => (
             <SwiperSlide key={i}>
-              <div className="card border-0 shadow-sm overflow-hidden" style={{ borderRadius: '12px', height: '240px' }}>
+              <div className="card border-0 shadow-sm overflow-hidden slider-card-item">
                 <img 
                   src={p.src} 
                   alt={p.title} 
-                  style={{ width: '100%', height: '170px', objectFit: 'cover' }} 
+                  className="slider-card-img" 
                 />
-                <div className="p-3 text-center d-flex align-items-center justify-content-center" style={{ height: '70px', backgroundColor: '#ffffff' }}>
-                  <h6 style={{ fontSize: '11px', color: '#0f2c59', fontWeight: '800', margin: 0, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                <div className="p-3 text-center d-flex align-items-center justify-content-center slider-card-footer">
+                  <h6 className="slider-card-title">
                     {p.title}
                   </h6>
                 </div>

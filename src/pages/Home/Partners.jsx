@@ -1,11 +1,17 @@
+// src/components/ProfessionalSections.jsx
 import React from 'react';
-import './Partners.css'; // আপনার CSS ফাইলের পাথ ঠিক রাখুন
+import './Partners.css';
 import { Briefcase, Instagram, Envelope } from 'react-bootstrap-icons';
 
 const ProfessionalSections = () => {
   return (
-    <div className="py-5" style={{ backgroundColor: '#fcfcfc' }}>
+    <div className="professional-section-wrapper">
       <div className="custom-box-width">
+        {/* সেকশনের ওপরের হেডিং */}
+        <h2 className="section-main-title">
+          AUF EINEN BLICK
+        </h2>
+
         <div className="row g-4">
           
           {/* বক্স ১ */}
@@ -13,7 +19,7 @@ const ProfessionalSections = () => {
             <div className="card-box">
               <div className="icon-wrapper"><Briefcase size={30} /></div>
               <h5 className="fw-bold mt-3">Unsere Kompetenzen</h5>
-              <p className="text-muted mt-2">Ihr Bauunternehmen für Berlin & bundesweit! Professionelle Qualität für Ihre Projekte.</p>
+              <p className="text-muted mt-2">Ihr zuverlässiges Bauunternehmen für Berlin & bundesweit! Professionelle Qualität für Ihre individuellen Projekte.</p>
               <a href="/services" className="btn btn-outline-primary btn-sm mt-3">Leistungen ansehen</a>
             </div>
           </div>

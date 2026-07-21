@@ -1,0 +1,42 @@
+/* src/components/Expertise.css */
+
+/* প্রথম সেকশন স্টাইল */
+.expertise-section-1 {
+  background-color: '#fdfdfd';
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+/* আইকনের রঙ */
+.expertise-icon-color {
+  color: #0f2c59;
+}
+
+/* প্রথম ইমেজের সাইজ ও অবজেক্ট ফিট */
+.expertise-img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* দ্বিতীয় ইমেজ ব্যাকগ্রাউন্ড সেকশন স্টাইল */
+.expertise-section-2 {
+  height: 500px;
+  padding-top: 35px;
+  background-image: url('/Home/HomeImg2.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+/* দ্বিতীয় সেকশনের ওভার্লে কালার */
+.expertise-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* কমন কন্টেইনার উইডথ */
+.custom-box-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}

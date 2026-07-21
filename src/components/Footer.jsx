@@ -4,24 +4,24 @@ const Footer = () => {
   return (
     <footer className="footer py-5 mt-5" style={{ backgroundColor: '#f8f9fa', borderTop: '1px solid #dee2e6' }}>
       <div className="custom-box-width">
-        <div className="row align-items-center g-4">
+        <div className="row align-items-start g-4">
           
-          {/* ১. লোগো এরিয়া */}
+          {/* ১. লোগো এরিয়া */}
           <div className="col-12 col-md-3 text-center text-md-start">
-            <img src="/logo1.jpg"  alt="CIGO-BAU GMBH" style={{ width: '100%', maxWidth: '180px', height: 'auto' }} />
+            <img src="/BGlogo1.png" alt="CIGO-BAU GMBH" style={{ width: '70%', maxWidth: '150px', height: 'auto' }} />
           </div>
 
-          {/* ২. সদস্যপদ এরিয়া */}
-          <div className="col-12 col-md-3 text-center">
+          {/* ২. সদস্যপদ এরিয়া */}
+          <div className="col-12 col-md-3 text-center text-md-start">
             <h6 className="fw-bold mb-3">Mitgliedschaft</h6>
-            <img src="/logo2.jpg"  alt="Handwerkskammer Berlin" style={{ width: '100%', maxWidth: '120px', height: 'auto' }} />
+            <img src="/logo2.jpg" alt="Handwerkskammer Berlin" style={{ width: '100%', maxWidth: '120px', height: 'auto' }} />
           </div>
 
           {/* ৩. ম্যানেজিং ডিরেক্টর */}
           <div className="col-12 col-md-3 text-center text-md-start">
             <h6 className="fw-bold mb-3">Geschäftsführer:</h6>
             <p className="mb-1 fw-bold">Dervis Aljkovic</p>
-            <ul className="list-unstyled small">
+            <ul className="list-unstyled small mb-0">
               <li>📱 0173 3103347</li>
               <li>📠 030 726211048</li>
               <li>📞 030 726211047</li>

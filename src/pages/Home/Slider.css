@@ -1,9 +1,69 @@
+/* src/components/Slider.css */
+
+/* মূল সেকশনের টপ এবং বটম প্যাডিং বাড়ানো হয়েছে (এখানে আগের চেয়ে বেশি প্যাডিং দেওয়া হয়েছে) */
+.slider-section-wrapper {
+  background-color: #fcfcfc;
+  padding-top: 65px;    /* টপ প্যাডিং */
+  padding-bottom: 25px; /* বটম প্যাডিং */
+}
+
+/* সেকশন টাইটেল স্টাইল */
+.slider-section-title {
+  color: #2a7af1;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* সোয়াইপার কন্টেইনার প্যাডিং */
+.slider-swiper-container {
+  padding-bottom: 50px !important;
+}
+
+/* কার্ড আইটেম স্টাইল */
+.slider-card-item {
+  border-radius: 12px;
+  height: 240px;
+}
+
+/* কার্ড ইমেজ স্টাইল */
+.slider-card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* কার্ড ফুটার বা টাইটেল এরিয়া */
+.slider-card-footer {
+  height: 70px;
+  background-color: #ffffff;
+}
+
+/* কার্ড টাইটেল টেক্সট স্টাইল */
+.slider-card-title {
+  font-size: 11px;
+  color: #0f2c59;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Swiper Pagination */
 .swiper-pagination-bullet-active {
   background-color: #2a7af1 !important;
 }
 
-/* নিশ্চিত করার জন্য যাতে কোনো অপ্রয়োজনীয় Hover না থাকে */
+/* নিশ্চিত করার জন্য যাতে কোনো অপ্রয়োজনীয় Hover না থাকে */
 .card:hover {
   transform: none !important;
+}
+
+/* কাস্টম বক্স উইডথ ক্লাস */
+.custom-box-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }

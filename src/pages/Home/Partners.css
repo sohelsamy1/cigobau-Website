@@ -1,7 +1,25 @@
-/* কাস্টম কালার ভেরিয়েবল */
+/* src/components/Partners.css */
+
 :root {
   --primary-color: #3b82f6;
   --layer-bg-color: rgba(2, 91, 235, 0.1);
+}
+
+.professional-section-wrapper {
+  background-color: #fcfcfc;
+  padding-top: 65px;
+  padding-bottom: 45px;
+}
+
+/* নতুন যোগ করা হেডিংয়ের স্টাইল */
+.section-main-title {
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 24px;
 }
 
 .card-box {
@@ -10,7 +28,7 @@
   border-radius: 15px;
   text-align: center;
   transition: all 0.4s ease;
-  height: 100%; /* কন্টেন্টের উচ্চতা অনুযায়ী অটোমেটিক হবে */
+  height: 100%;
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -20,7 +38,6 @@
   border-bottom: 4px solid var(--primary-color);
 }
 
-/* বাম দিক থেকে আসা লেয়ারের কোড */
 .card-box::before {
   content: "";
   position: absolute;
@@ -66,4 +83,12 @@
 .card-box:hover .icon-wrapper {
   background: var(--primary-color);
   color: #ffffff;
+}
+
+.custom-box-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }

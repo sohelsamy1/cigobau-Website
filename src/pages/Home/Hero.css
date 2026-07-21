@@ -3,7 +3,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  height: 60vh; /* উচ্চতা প্রয়োজন অনুযায়ী কমাতে বা বাড়াতে পারেন */
+  height: 60vh; /* উচ্চতা প্রয়োজন অনুযায়ী কমাতে বা বাড়াতে পারেন */
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
   z-index: -1; /* ভিডিওটি ব্যাকগ্রাউন্ডে রাখার জন্য */
 }
 
-/* পুরো স্ক্রিন জুড়ে ফ্লেক্সবক্স দিয়ে মাঝখানে আনার জন্য */
+/* পুরো স্ক্রিন জুড়ে ফ্লেক্সবক্স দিয়ে মাঝখানে আনার জন্য */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -28,16 +28,19 @@
   justify-content: center; /* হরাইজন্টালি মাঝখানে */
   align-items: center;     /* ভার্টিকালি মাঝখানে */
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* টেক্সট বক্সের স্টাইল */
 .hero-content {
-  background-color: #468DFF; /* স্কাই ব্লু রঙ ও স্বচ্ছতা */
-  padding: 16px 14px;
+  background-color: #468DFF; /* স্কাই ব্লু রঙ */
+  padding: 20px;
   border-radius: 5px;
   text-align: center; 
-  max-width: 60%;
+  max-width: 600px;
+  width: 100%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 .hero-content h1 {
@@ -63,5 +66,17 @@
 .hero-btn:hover {
   background-color: #468DFF;
   border: 1px solid #f5f5f5;
-    color: #f5f5f5;
+  color: #f5f5f5;
+}
+
+/* মোবাইল ও ছোট স্ক্রিনের জন্য রেসপনসিভ ফিক্স */
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 90%; /* মোবাইলে বক্সটি স্ক্রিনের সাথে সামঞ্জস্য রেখে ছোট হবে */
+    padding: 15px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.3rem; /* মোবাইলে লেখার সাইজ একটু ছোট হবে যাতে না ভাঙে */
+  }
 }

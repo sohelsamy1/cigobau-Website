@@ -10,10 +10,10 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Leistungen', path: '/services' },
-    { name: 'Referenzen', path: '/references' },
-    { name: 'Karriere', path: '/career' },
-    { name: 'Kontakt', path: '/contact' },
+    { name: 'Leistungen', path: '/Leistungen' },
+    { name: 'Referenzen', path: '/Referenzen' },
+    { name: 'Karriere', path: '/Karriere' },
+    { name: 'Kontakt', path: '/Kontakt' },
   ];
 
   return (
@@ -48,7 +48,7 @@ const Header = () => {
                 <div className="fw-normal text-dark">cigo-bau@web.de</div>
               </div>
             </div>
-            <Link to="/contact" className="btn-kontakt">kontakt</Link>
+            <Link to="/Kontakt" className="btn-kontakt">kontakt</Link>
           </div>
         </div>
       </div>
