@@ -51,8 +51,8 @@
   background-color: #FCFCFC !important;
   margin-top: 0px ;
   margin-bottom: 50px !important;
-  padding-top: 110px !important; 
-  padding-bottom: 50px !important;
+  padding-top: 50px !important; 
+  padding-bottom: 40px !important;
 }
 
 .section-title {
@@ -80,10 +80,6 @@
   transition: 0.3s;
 }
 
-.btn-send:hover {
-  background-color: #ffffff;
-  color: #4a86e8;
-}
 
 /* অফিস আওয়ার্স */
 .office-hours-box {
@@ -91,6 +87,7 @@
   padding: 30px;
   border-left: 5px solid #4a86e8;
   border-radius: 4px;
+  margin-top: 90px;
 }
 
 .office-hours-box h3 {
@@ -119,11 +116,11 @@
 /* ম্যাপ সেকশন */
 .map-section {
   width: 100%;
-  padding-top: 60px !important;    /* ওপরের প্যাডিং প্রয়োজন অনুযায়ী কমাতে বা বাড়াতে পারেন */
+  padding-top: 10px !important;    /* ওপরের প্যাডিং প্রয়োজন অনুযায়ী কমাতে বা বাড়াতে পারেন */
   padding-bottom: 2px !important; /* নিচের প্যাডিং */
   
   /* নতুন মার্জিন যোগ করা হলো */
-  margin-top: 40px !important;     ,  /* ওপরের সেকশন থেকে দূরত্ব */
+  margin-top: 40px !important; /* ওপরের সেকশন থেকে দূরত্ব */
   margin-bottom: 0px;  /* নিচের সেকশন থেকে দূরত্ব */
 }
 

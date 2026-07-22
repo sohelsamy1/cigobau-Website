@@ -14,7 +14,7 @@ const Footer = () => {
           {/* ২. সদস্যপদ এরিয়া */}
           <div className="col-12 col-md-3 text-center text-md-start">
             <h6 className="fw-bold mb-3">Mitgliedschaft</h6>
-            <img src="/logo2.jpg" alt="Handwerkskammer Berlin" style={{ width: '100%', maxWidth: '120px', height: 'auto' }} />
+            <img src="/logo2.png" alt="Handwerkskammer Berlin" style={{ width: '100%', maxWidth: '120px', height: 'auto' }} />
           </div>
 
           {/* ৩. ম্যানেজিং ডিরেক্টর */}

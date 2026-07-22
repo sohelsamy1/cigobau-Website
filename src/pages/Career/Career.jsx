@@ -11,21 +11,24 @@ const Career = () => {
         </div>
       </section>
 
-      {/* ২. আর্টিকেল সেকশন */}
-      <section className="info-section-clean custom-box-width">
-        <div className="content-wrapper">
-          <h2>Wir suchen Verstärkung für unser Team!</h2>
-          <p className="lead">
-            Sind Sie motiviert, kompetent und bereit für neue Herausforderungen? 
-            Werden Sie Teil der CIGO-BAU Familie.
-          </p>
-          <div className="divider"></div>
-          <p className="job-list">
-            <strong>Wir suchen:</strong> Stahlbetonbauer, Bauleiter, Maurer, Rohbauer oder Polier!
-          </p>
-          <a href="/kontakt" className="apply-btn">Jetzt Kontakt aufnehmen</a>
-        </div>
-      </section>
+   
+{/* ২. আর্টিকেল সেকশন */}
+<section className="info-section-clean">
+  <div className="custom-box-width">
+    <div className="content-wrapper">
+      <h2>Wir suchen Verstärkung für unser Team!</h2>
+      <p className="lead">
+        Sind Sie motiviert, kompetent und bereit für neue Herausforderungen? 
+        Werden Sie Teil der CIGO-BAU Familie.
+      </p>
+      <div className="divider"></div>
+      <p className="job-list">
+        <strong>Wir suchen:</strong> Stahlbetonbauer, Bauleiter, Maurer, Rohbauer oder Polier!
+      </p>
+      <a href="/kontakt" className="apply-btn">Jetzt Kontakt aufnehmen</a>
+    </div>
+  </div>
+</section>
 
       {/* ৩. ভিডিও সেকশন */}
       <section className="video-grid custom-box-width">

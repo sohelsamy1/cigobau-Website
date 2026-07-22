@@ -4,7 +4,8 @@
   --top-margin: -10px;
   --bottom-margin: 30px;
   --max-width: 1300px;
-  --side-padding: 40px; /* নতুন ভেরিয়েবল হিসেবে প্যাডিং সেট করে রাখলাম */
+  --side-padding: 40px;        /* ডেস্কটপের জন্য প্যাডিং */
+  --mobile-side-padding: 15px; /* মোবাইলের জন্য আলাদা প্যাডিং (আপনার পছন্দমতো পিক্সেল বসিয়ে নিন) */
 }
 
 /* কন্টেন্ট বক্স - যা হেডার, ফুটার এবং সব পেজে কাজ করবে */
@@ -13,7 +14,7 @@
   max-width: var(--max-width) !important;
   margin: var(--top-margin) auto var(--bottom-margin) auto !important;
   
-  /* দুই সাইডের প্যাডিং উল্লেখ করা হলো */
+  /* ডেস্কটপের ডিফল্ট প্যাডিং */
   padding-left: var(--side-padding) !important;
   padding-right: var(--side-padding) !important;
   
@@ -23,12 +24,11 @@
   margin-right: auto !important;
 }
 
-/* রেসপন্সিভ - মোবাইলের জন্য */
+/* রেসপন্সিভ - মোবাইলের জন্য আলাদা প্যাডিং */
 @media (max-width: 991px) {
   .custom-box-width { 
-    /* মোবাইলে প্যাডিং বাড়ানো হলো */
-    padding-left: 30px !important; 
-    padding-right: 30px !important; 
+    padding-left: var(--mobile-side-padding) !important; 
+    padding-right: var(--mobile-side-padding) !important; 
   }
 }
 
@@ -45,6 +45,14 @@ header .custom-box-width {
   margin: 0 auto !important; 
   padding-left: var(--side-padding) !important;
   padding-right: var(--side-padding) !important;
+}
+
+/* মোবাইলে হেডারের প্যাডিং আলাদা করতে চাইলে চাইলে নিচে মিডিয়া কোয়ারি যোগ করতে পারেন */
+@media (max-width: 991px) {
+  header .custom-box-width {
+    padding-left: var(--mobile-side-padding) !important;
+    padding-right: var(--mobile-side-padding) !important;
+  }
 }
 
 /* ফুটার ফিক্স */

@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+   
 }
 
 /* নীল বক্স ডিজাইন */
@@ -32,12 +33,15 @@
   border-radius: 5px;
 }
 
-/* ইনফো সেকশন */
+/* ইনফো সেকশন - ফুল উইথ ব্যাকগ্রাউন্ড */
 .info-section-clean {
-  background-color: #fcfcfc; /* এখানে আপনার পছন্দমতো ব্যাকগ্রাউন্ড কালার দিন */
-  padding-top: 60px;       /* টপ প্যাডিং */
-  padding-bottom: 60px;    /* বটম প্যাডিং */
+  background-color: #FCFCFC; 
+  width: 100% !important;
+  padding-top: 60px;       
+  padding-bottom: 45px;    
   text-align: center;
+
+
 }
 
 .divider {
@@ -70,11 +74,12 @@
 .section-title {
   color: #468DFF;
   margin-bottom: 30px;
-  margin-top: -50px;
+  margin-top: 10px;
   text-align: center;
 }
 
 .career-video {
+  margin-top: 10px;
   width: 100%;
   height: 350px;
   object-fit: cover;
